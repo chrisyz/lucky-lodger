@@ -1,0 +1,20 @@
+{
+  "name": "lucky-lodger",
+  "description": "Lucky you!",
+  "version": "0.0.1",
+  "dependencies": {
+    "browserify": "^16.1.0",
+    "shuffle-seed": "^1.1.6"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build-js": "browserify src/js/main.js > dist/scripts/main.dist.js",
+    "watch-js": "watchify src/js/main.js -o dist/scripts/main.dist.js -dv"
+  },
+  "devDependencies": {
+    "watchify": "^3.10.0"
+  }
+}
