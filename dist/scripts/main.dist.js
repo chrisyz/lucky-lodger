@@ -1037,15 +1037,9 @@ module.exports = self;
 'use strict';
 const shuffleSeed = require('shuffle-seed');
 
-const LODGERS = [
-	'Spike/Eliz',
-	'YZ/Alex',
-	'Dan/Mary',
-	'Roman/Emily',
-	'Jason',
-	'Ian',
-	'Justin/Eric',
-	'Dan'
+const OPTIONS = [
+	'Heads',
+	'Tails'
 ];
 
 module.exports = (function() {
@@ -1057,11 +1051,9 @@ module.exports = (function() {
 		e.preventDefault();
 
 		const seed = input.value;
-		const result = shuffleSeed.shuffle(LODGERS, seed);
+		const result = shuffleSeed.shuffle(OPTIONS, seed);
 
-		resultsEl.innerHTML = result.reduce((acc, lodger) => {
-			return acc + `<li>${lodger}</li>`;
-		},'');
+		resultsEl.textContent = `The answer is ${result[0]}`;
 	});
 
 })();
