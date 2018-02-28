@@ -5,11 +5,7 @@ const LODGERS = [
 	'Spike/Eliz',
 	'YZ/Alex',
 	'Dan/Mary',
-	'Roman/Emily',
-	'Jason',
-	'Ian',
-	'Justin/Eric',
-	'Dan'
+	'Roman/Emily'
 ];
 
 module.exports = (function() {
